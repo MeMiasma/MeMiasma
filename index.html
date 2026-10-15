@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="MeMiasma — Python-разработчик. Telegram-боты, API, автоматизация, парсеры, SaaS." />
+  <title>MeMiasma — Python Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>MeMiasma<span class="brand-dot">.</span>dev</span>
+    </a>
+    <div class="header-rating">
+      <span class="rating-stars">★★★★★</span>
+      <span class="rating-value">4.9</span>
+      <span class="rating-count">(214 отзывов)</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#projects">Проекты</a>
+      <a href="#reviews">Книга отзывов</a>
+      <a href="#process">Процесс</a>
+      <a href="#about">Обо мне</a>
+      <a class="nav-cta" href="#contact">Связаться <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO WORK <span class="eyebrow-divider">/</span> PYTHON DEVELOPER</div>
+        <h1>Превращаю сложные<br><span class="gradient-text">задачи в рабочий код.</span></h1>
+        <p class="hero-lead">Разрабатываю Telegram-ботов, API, парсеры, автоматизацию и SaaS-платформы для бизнеса. От идеи и MVP до стабильного решения, готового к росту. Более 260 проектов, средний рейтинг 4.9 из 5.0.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты <span>↓</span></a>
+          <a class="button button-ghost" href="https://t.me/MeMiasma" target="_blank">Написать в Telegram <span>↗</span></a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>260+</strong><span>проектов</span></div>
+          <div><strong>4.9★</strong><span>рейтинг</span></div>
+          <div><strong>214</strong><span>отзывов</span></div>
+          <div><strong>7</strong><span>лет опыта</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>solution.py</span><span class="window-lock">● production</span></div>
+          <div class="code-content">
+            <div><span class="line-no">01</span><span class="code-purple">class</span> <span class="code-blue">Solution</span>:</div>
+            <div><span class="line-no">02</span>&nbsp;&nbsp;<span class="code-purple">def</span> <span class="code-yellow">build</span>(self, idea):</div>
+            <div><span class="line-no">03</span>&nbsp;&nbsp;&nbsp;&nbsp;problem = idea.<span class="code-blue">understand</span>()</div>
+            <div><span class="line-no">04</span>&nbsp;&nbsp;&nbsp;&nbsp;plan = self.<span class="code-blue">design</span>(problem)</div>
+            <div><span class="line-no">05</span>&nbsp;&nbsp;&nbsp;&nbsp;result = self.<span class="code-blue">develop</span>(plan)</div>
+            <div><span class="line-no">06</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-purple">return</span> result.<span class="code-green">ship</span>()</div>
+            <div class="code-spacer"></div>
+            <div class="terminal-line"><span class="terminal-prompt">➜</span> tests passed <span class="terminal-check">✓</span></div>
+            <div class="terminal-line"><span class="terminal-prompt">➜</span> deployment ready <span class="terminal-check">✓</span></div>
+          </div>
+          <div class="window-footer"><span>UTF-8</span><span>Python 3.12</span><span>Ln 06, Col 28</span></div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">⌘</span> 260+ projects</div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon green">★</span> 4.9 / 5.0</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="section-wrap trust-inner">
+        <span>260+ ПРОЕКТОВ</span>
+        <span>214 ОТЗЫВОВ</span>
+        <span>РЕЙТИНГ 4.9 / 5.0</span>
+        <span>ПОДДЕРЖКА ПОСЛЕ РЕЛИЗА</span>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / ЧЕМ ПОМОГУ</div><h2>Код — это инструмент.<br><span class="muted-heading">Результат — главное.</span></h2></div>
+        <p>Подключаюсь к задаче на нужном этапе: от проверки идеи до развития уже работающего продукта.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-icon">⌘</div><h3>Telegram-боты</h3><p>Приём заявок, поддержка, каталоги, уведомления, платежи и админ-панели. Полный цикл: от прототипа до продакшена.</p><div class="service-tags"><span>aiogram 3.x</span><span>Telegram API</span><span>FSM</span></div></article>
+        <article class="service-card"><div class="service-icon">⤴</div><h3>Backend и API</h3><p>Сервисы, интеграции, авторизация, бизнес-логика и надёжная работа с данными. Проектирую с расчётом на нагрузку.</p><div class="service-tags"><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span></div></article>
+        <article class="service-card"><div class="service-icon">⚙</div><h3>Автоматизация</h3><p>Убираю повторяющиеся ручные операции: обработка файлов, отчёты и синхронизация данных между сервисами.</p><div class="service-tags"><span>Python</span><span>Celery</span><span>Integrations</span></div></article>
+        <article class="service-card"><div class="service-icon">◈</div><h3>Парсеры и SaaS</h3><p>Парсинг сайтов, аналитика, дашборды и SaaS-платформы под задачи бизнеса. Работа с прокси, капчей и антиботом.</p><div class="service-tags"><span>Scrapy</span><span>Selenium</span><span>SaaS</span></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading projects-heading">
+        <div><div class="eyebrow">02 / ПОРТФОЛИО</div><h2>260+ проектов,<br><span class="muted-heading">которые решают задачи.</span></h2></div>
+        <p>Реальные кейсы с заказчиками, датами, стеками и отзывами. Каждый проект с подробным описанием и стеком.</p>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="🔍 Поиск по названию, заказчику, тегу..." />
+        <select id="sortSelect">
+          <option value="date-desc">Сначала новые</option>
+          <option value="date-asc">Сначала старые</option>
+          <option value="rating-desc">По рейтингу</option>
+          <option value="title-asc">По алфавиту</option>
+        </select>
+      </div>
+
+      <div class="filter-row" id="filterRow">
+        <button class="filter-button active" data-filter="all">Все <span id="count-all">0</span></button>
+        <button class="filter-button" data-filter="ecommerce">E-commerce <span id="count-ecommerce">0</span></button>
+        <button class="filter-button" data-filter="fintech">Финтех <span id="count-fintech">0</span></button>
+        <button class="filter-button" data-filter="saas">SaaS <span id="count-saas">0</span></button>
+        <button class="filter-button" data-filter="automation">Автоматизация <span id="count-automation">0</span></button>
+        <button class="filter-button" data-filter="logistics">Логистика <span id="count-logistics">0</span></button>
+        <button class="filter-button" data-filter="medical">Медицина <span id="count-medical">0</span></button>
+        <button class="filter-button" data-filter="education">Образование <span id="count-education">0</span></button>
+        <button class="filter-button" data-filter="realestate">Недвижимость <span id="count-realestate">0</span></button>
+        <button class="filter-button" data-filter="delivery">Доставка <span id="count-delivery">0</span></button>
+        <button class="filter-button" data-filter="mobile">Мобильные <span id="count-mobile">0</span></button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+
+      <div class="load-more-wrap">
+        <button class="button button-ghost" id="loadMoreBtn">Показать ещё 30 проектов ↓</button>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="reviews">
+      <div class="section-heading">
+        <div><div class="eyebrow">03 / КНИГА ОТЗЫВОВ</div><h2>Что говорят клиенты.<br><span class="muted-heading">214 отзывов, рейтинг 4.9.</span></h2></div>
+        <p>Реальные отзывы от заказчиков. Иногда с ником, иногда с именем. Средний рейтинг 4.9 из 5.0.</p>
+      </div>
+      <div class="reviews-book">
+        <div class="reviews-page" id="reviewsPage"></div>
+        <div class="reviews-pagination">
+          <button class="page-btn" id="reviewsPrev">← Назад</button>
+          <span class="page-info" id="reviewsPageInfo">Страница 1 из 6</span>
+          <button class="page-btn" id="reviewsNext">Вперёд →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block process-section" id="process">
+      <div class="section-heading"><div><div class="eyebrow">04 / КАК РАБОТАЮ</div><h2>Понятный процесс.<br><span class="muted-heading">Без сюрпризов.</span></h2></div><p>Договорённости фиксируются до начала разработки. Вы понимаете, что будет сделано, в какие сроки и что получите на выходе.</p></div>
+      <div class="process-grid">
+        <div class="process-step"><span>01</span><h3>Погружение</h3><p>Разбираюсь в задаче, ограничениях и критериях готовности. Задаю вопросы, пока не пойму всё до конца.</p></div>
+        <div class="process-step"><span>02</span><h3>План и оценка</h3><p>Согласовываем объём, стоимость, этапы и сроки. Фиксируем в договоре или переписке.</p></div>
+        <div class="process-step"><span>03</span><h3>Разработка</h3><p>Показываю промежуточный результат, тестирую и учитываю обратную связь. Работаю спринтами по 1-2 недели.</p></div>
+        <div class="process-step"><span>04</span><h3>Передача</h3><p>Передаю код, инструкцию запуска, документацию и согласованные материалы. Поддержка после релиза включена.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block about-section" id="about">
+      <div class="about-panel">
+        <div class="about-mark">&lt;py /&gt;</div>
+        <div class="about-content">
+          <div class="eyebrow">05 / ОБО МНЕ</div>
+          <h2>MeMiasma — Python-разработчик<br>с фокусом на бизнес.</h2>
+          <p>Меня зовут MeMiasma. Я Python-разработчик с опытом более 7 лет и 260+ реализованных проектов. Специализируюсь на разработке Telegram-ботов, backend-сервисов, парсеров и SaaS-платформ под задачи малого и среднего бизнеса.</p>
+          <p>Начинал с простых скриптов автоматизации, сейчас работаю над высоконагруженными системами: платёжные шлюзы, крипто-биржи, LMS-платформы и агрегаторы. Понимаю бизнес-логику, а не только код, поэтому предлагаю решения, которые реально работают и приносят прибыль.</p>
+          <p>В работе придерживаюсь трёх принципов: прозрачность, качество и сроки. Прозрачность означает, что вы всегда знаете, на каком этапе задача. Качество значит, что код пишется с расчётом на поддержку и масштабирование. Сроки значит, что если я вижу риск, я сообщаю об этом заранее, а не в день сдачи.</p>
+          <div class="about-highlights">
+            <span>✓ 7+ лет опыта</span>
+            <span>✓ 260+ проектов</span>
+            <span>✓ Рейтинг 4.9 / 5.0</span>
+            <span>✓ 214 отзывов</span>
+            <span>✓ Поддержка после релиза</span>
+          </div>
+          <div class="about-stack">
+            <h3>Мой стек:</h3>
+            <div class="stack-grid">
+              <div class="stack-item"><strong>Языки</strong>Python (основной), JavaScript, Go (базовый), SQL</div>
+              <div class="stack-item"><strong>Backend</strong>FastAPI, Django, Flask, aiogram 3.x, Telethon</div>
+              <div class="stack-item"><strong>Базы данных</strong>PostgreSQL, MySQL, SQLite, MongoDB, Redis, ClickHouse</div>
+              <div class="stack-item"><strong>Очереди</strong>Celery, RabbitMQ, Kafka, Redis Queue</div>
+              <div class="stack-item"><strong>Парсинг</strong>Scrapy, Selenium, Playwright, BeautifulSoup, aiohttp</div>
+              <div class="stack-item"><strong>DevOps</strong>Docker, Docker Compose, Nginx, CI/CD, Linux</div>
+              <div class="stack-item"><strong>Frontend</strong>HTML, CSS, JavaScript, React (базовый уровень)</div>
+              <div class="stack-item"><strong>Интеграции</strong>Telegram API, CryptoPay, YooKassa, Stripe, Google API, 1С</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-card">
+        <div class="eyebrow">06 / ОБСУДИМ ЗАДАЧУ</div>
+        <h2>Есть идея?<br><span class="gradient-text">Давайте воплотим её.</span></h2>
+        <p>Напишите пару слов о задаче. Обсудим цель, ограничения и следующий разумный шаг. Без обязательств.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://t.me/MeMiasma" target="_blank">Написать в Telegram <span>↗</span></a>
+          <a class="button button-ghost" href="https://github.com/MeMiasma" target="_blank">GitHub <span>↗</span></a>
+        </div>
+        <div class="contact-foot">
+          <span><i class="status-dot"></i> Открыт к новым проектам</span>
+          <span>Telegram: @MeMiasma</span>
+          <span>GitHub: MeMiasma</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>MeMiasma<span class="brand-dot">.</span>dev</span></a>
+    <span>© 2024 MeMiasma. 260+ проектов. Рейтинг 4.9★</span>
+    <a href="https://t.me/MeMiasma" target="_blank">Telegram ↗</a>
+  </footer>
+
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="eyebrow" id="modalEyebrow">PROJECT</div>
+      <h2 id="modalTitle">Название проекта</h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <p id="modalDescription"></p>
+      <h3>Ключевые функции</h3>
+      <ul id="modalFeatures"></ul>
+      <h3>Стек технологий</h3>
+      <div class="tag-list" id="modalTags"></div>
+      <div class="modal-rating" id="modalRating"></div>
+    </div>
+  </div>
+
+  <script src="projects-data.js"></script>
+  <script src="reviews-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
